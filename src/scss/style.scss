@@ -1,0 +1,91 @@
+// шрифт!
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 1440px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.header {
+    position: relative;
+    background: url('../img/header.jpg') no-repeat;
+    min-height: 800px;
+    
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+    }
+    &__ball {
+        width: 42px;
+        height: 42px;
+        fill: #fff;
+    }
+    &__tel {
+        margin-right: 30px;
+        padding-left: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-image: url('../img/phone.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    &__mail {
+        padding-left: 30px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        background-image: url('../img/mail.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    &__btn {
+        padding: 8px 25px 8px 60px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFAB00;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 100px;
+        background-repeat: no-repeat;
+        background-position: 25px center;
+        cursor: pointer;
+
+        &-auth {
+            margin-right: 10px;
+            background-image: url('../img/auth.svg');
+        }
+        &-partners {
+            background-image: url('../img/partners.svg');
+        }
+    }
+    &__social {
+        position: absolute;
+        top: 280px;
+        right: 30px;
+        display: grid;
+        grid-gap: 14px;
+    }
+    &__link {
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+        }
+    }
+    &__picture {
+        display: flex;
+        justify-content: center;
+    }
+}
