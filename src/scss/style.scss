@@ -32,10 +32,6 @@
     list-style: none;
 }
 
-.rotate {
-    transform: rotate(180deg);
-}
-
 button {
     cursor: pointer;
 }
@@ -452,13 +448,15 @@ body {
         }
     }
     &__heading {
-        &::after {
-            content: '';
-            display: block;
-            width: 24px;
-            height: 24px;
-            background: url('../img/accordion-arrow.svg') no-repeat;
+        &:not(:last-child) {
+            margin-bottom: 3px !important;
         }
+    }
+    &__arrow {
+        transition: .3s ease-in-out transform;
+    }
+    .ui-state-active .questions__arrow {
+        transform: rotate(180deg);
     }
     .ui-accordion-header-icon {
         display: none;
@@ -484,5 +482,71 @@ body {
         line-height: 24px;
         color: #4E5C66;
         border: none;
+    }
+}
+
+.reviews {
+    .container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin-top: 50px;
+        color: #fff;
+        background: url('../img/rewiews.jpg') no-repeat;
+    }
+    &__img {
+        transform: translate(25px, -55px);
+    }
+    &__content {
+        max-width: 445px;
+        padding-top: 70px;
+    }
+    &__title {
+        margin-bottom: 13px;
+        font-weight: 700;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    &__info {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__band {
+        margin-bottom: 17px;
+        width: 128px;
+        height: 17px;
+        fill: #fff;
+    }
+    &__discription {
+        margin-bottom: 12px;
+        font-family: 'Times New Roman';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__author {
+        font-weight: 700;
+        font-size: 14px;
+        text-align: right;
+    }
+    &__item {
+        position: absolute;
+
+        &:nth-child(1) {
+            top: -37px;
+            left: 545px;
+        }
+        &:nth-child(2) {
+            top: -20px;
+            left: 1169px;
+        }
+        &:nth-child(3) {
+            top: 431px;
+            left: 1138px;
+        }
     }
 }
