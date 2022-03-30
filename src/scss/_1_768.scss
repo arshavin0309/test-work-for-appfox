@@ -1,0 +1,70 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+
+    .header {
+        &__tel {
+            span {
+                display: none;
+            }
+        }
+        &__mail {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .hero {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .rest {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .platform {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .delivery {
+
+    }
+
+    .questions {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            display: none;
+        }
+    }
+
+    .reviews {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        &__img {
+            display: none;
+        }
+    }
+
+    .connection {
+        &__form {
+            flex-direction: column;
+        }
+    }
+
+    .footer {
+        
+    }
+}

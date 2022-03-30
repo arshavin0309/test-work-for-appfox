@@ -46,8 +46,7 @@ button {
 
 body {
     min-width: 320px;
-    // временно 1440px
-    min-width: 1440px;
+
 }
 
 .container {
@@ -58,23 +57,33 @@ body {
 }
 
 .tel {
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-    background-image: url('../img/phone.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+        fill: #fff;
+    }
 }
 
 .mail {
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 16px;
     color: #FFFFFF;
-    background-image: url('../img/mail.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 7px;
+        fill: #fff;
+    }
 }
 
 .header {
@@ -97,6 +106,7 @@ body {
         fill: #fff;
     }
     &__contact {
+        display: flex;
         margin-left: 155px;
     }
     &__tel {
@@ -116,9 +126,17 @@ body {
         &-auth {
             margin-right: 10px;
             background-image: url('../img/auth.svg');
+
+            &-mobile {
+                display: none;
+            }
         }
         &-partners {
             background-image: url('../img/partners.svg');
+            
+            &-mobile {
+                display: none;
+            }
         }
     }
     &__picture {
@@ -664,6 +682,7 @@ body {
         background-color: #FFAB00;
     }
     &__contacts {
+        display: flex;
         margin-left: 435px;
     }
     &__tel {
