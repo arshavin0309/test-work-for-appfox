@@ -81,7 +81,7 @@ body {
     .container {
         position: relative;
         min-height: 800px;
-        background: url('../img/header.jpg') no-repeat center top;
+        background: url('../img/header.jpg') center top no-repeat;
     }
     &__box {
         z-index: 2;
@@ -400,8 +400,8 @@ body {
         grid-template-columns: 1fr 1fr;
         margin-top: 10px;
         grid-gap: 30px;
-        background: url('../img/delivery.jpg') no-repeat;
         color: #FFFFFF;
+        background: url('../img/delivery.jpg') no-repeat;
     }
     &__img {
         transform: translateY(-20px);
