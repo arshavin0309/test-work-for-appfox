@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script defer src="js/index.js"></script>
 </head>
 <body>
@@ -32,46 +36,46 @@
                     <img src="img/header-point.png" alt="шар">
                 </a>
             </div>
-        </div>
-        <div class="header__social">
-            <a href="" class="header__link">
-                <svg>
-                    <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg>
-            </a>
-            <a href="" class="header__link">
-                <svg>
-                    <use xlink:href="img/sprite.svg#vk"></use>
-                </svg>
-            </a>
-            <a href="" class="header__link">
-                <svg>
-                    <use xlink:href="img/sprite.svg#fb"></use>
-                </svg>
-            </a>
-        </div>
-        <div class="header__balls">
-            <img src="img/header-balls/left-1.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-2.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-3.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-4.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-5.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-6.png" alt="шар" class="header__item">
-            <img src="img/header-balls/left-7.png" alt="шар" class="header__item">
-
-            <img src="img/header-balls/right-1.png" alt="шар" class="header__item">
-            <img src="img/header-balls/right-2.png" alt="шар" class="header__item">
-            <img src="img/header-balls/right-3.png" alt="шар" class="header__item">
-            <img src="img/header-balls/right-4.png" alt="шар" class="header__item">
-            <img src="img/header-balls/right-5.png" alt="шар" class="header__item">
-            <img src="img/header-balls/right-6.png" alt="шар" class="header__item">
+            <div class="header__social">
+                <a href="" class="header__link">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="" class="header__link">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="" class="header__link">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__balls">
+                <img src="img/header-balls/left-1.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-2.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-3.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-4.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-5.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-6.png" alt="шар" class="header__item">
+                <img src="img/header-balls/left-7.png" alt="шар" class="header__item">
+    
+                <img src="img/header-balls/right-1.png" alt="шар" class="header__item">
+                <img src="img/header-balls/right-2.png" alt="шар" class="header__item">
+                <img src="img/header-balls/right-3.png" alt="шар" class="header__item">
+                <img src="img/header-balls/right-4.png" alt="шар" class="header__item">
+                <img src="img/header-balls/right-5.png" alt="шар" class="header__item">
+                <img src="img/header-balls/right-6.png" alt="шар" class="header__item">
+            </div>
         </div>
     </header>
 </body>
     <main>
         <section class="hero">
             <div class="container">
-                <img src="img/hero.png" alt="смартфон" class="hero__img">
+                <img src="img/hero-phone.png" alt="смартфон" class="hero__img">
                 <div class="hero__content">
                     <h2 class="hero__title">
                         <span>Где</span>
@@ -89,6 +93,114 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="rest">
+            <div class="container">
+                <div class="rest__content">
+                    <h2 class="rest__title">
+                        <span>Ваши</span>
+                        любимые рестораны онлайн
+                    </h2>
+                    <p class="rest__info">
+                        Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа
+                    </p>
+                    <ul class="rest__list">
+                        <li class="rest__item">
+                            <div class="rest__number">1740 +</div>
+                            <div class="rest__discription">Скачиваний</div>
+                        </li>
+                        <li class="rest__item">
+                            <div class="rest__number">12 +</div>
+                            <div class="rest__discription">Ресторанов</div>
+                        </li>
+                        <li class="rest__item">
+                            <div class="rest__number">ДО 90%</div>
+                            <div class="rest__discription">Cкидки</div>
+                        </li>
+                    </ul>
+                </div>
+                <img src="img/rest-phone.png" alt="смартфон" class="rest__img">
+                <div class="rest__balls">
+                    <img src="img/rest-balls/ball-1.png" alt="шар" class="rest__ball">
+                    <img src="img/rest-balls/ball-2.png" alt="шар" class="rest__ball">
+                    <img src="img/rest-balls/ball-3.png" alt="шар" class="rest__ball">
+                </div>
+            </div>
+        </section>
+        <section class="platform">
+            <div class="container">
+                <div class="platform__content">
+                    <h2 class="platform__title">
+                        <span>Единая платформа</span>
+                        для всей россии
+                    </h2>
+                    <p class="platform__info">
+                        Скачивайте приложение и создавайте свое виртуальное кафе электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказаСкачивайте приложение и создавайте свое виртуальное кафе
+                    </p>
+                </div>
+                <div class="platform__img">
+                    <img src="img/platform.jpg" alt="карта">
+                    <img src="img/map-1.png" alt="элемент на карте" class="platform__item">
+                    <img src="img/map-2.png" alt="элемент на карте" class="platform__item">
+                    <img src="img/map-3.png" alt="элемент на карте" class="platform__item">
+                    <img src="img/map-4.png" alt="элемент на карте" class="platform__item">
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="container">
+                <img src="img/worker.png" alt="фото сотрудника" class="delivery__img">
+                <div class="delivery__content">
+                    <h2 class="delivery__title">У нас есть доставка</h2>
+                    <p class="delivery__info">
+                        Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню, доставкой и возможностью предзаказа виртуальное кафе с электронным меню, доставкой
+                    </p>
+                    <div class="delivery__list">
+                        <img src="img/delivery-balls/ball-1.png" alt="шар" class="delivery__item">
+                        <img src="img/delivery-balls/ball-2.png" alt="шар" class="delivery__item">
+                        <img src="img/delivery-balls/ball-3.png" alt="шар" class="delivery__item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <div class="questions__content">
+                    <div id="accordion">
+                        <h3 class="questions__heading">Вопрос в несколько слов</h3>
+                        <div class="info">
+                            <p>
+                                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                            </p>
+                        </div>
+                        <h3 class="questions__heading">Вопрос в несколько строк</h3>
+                        <div class="info">
+                            <p>
+                                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                            </p>
+                        </div>
+                        <h3 class="questions__heading">Вопрос в несколько букв</h3>
+                        <div class="info">
+                            <p>
+                                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                            </p>
+                        </div>
+                        <h3 class="questions__heading">Вопрос в несколько символов</h3>
+                        <div class="info">
+                            <p>
+                                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                            </p>
+                        </div>
+                        <h3 class="questions__heading">Вопрос в несколько слов</h3>
+                        <div class="info">
+                            <p>
+                                Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню, доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/cook.png" alt="фото повара" class="questions__img">
             </div>
         </section>
     </main>
