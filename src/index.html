@@ -20,8 +20,8 @@
                     <use xlink:href="img/sprite.svg#header-ball"></use>
                 </svg>
                 <div class="header__contact">
-                    <a href="tel:+79770000000" class="header__tel">+7 977 000-00-00</a>
-                    <a href="mailto:support@mail.ru" class="header__mail">support@mail.ru</a>
+                    <a href="tel:+79770000000" class="tel header__tel">+7 977 000-00-00</a>
+                    <a href="mailto:support@mail.ru" class="mail header__mail">support@mail.ru</a>
                 </div>
                 <div class="header__list">
                     <button class="header__btn header__btn-auth">Войти</button>
@@ -71,7 +71,6 @@
             </div>
         </div>
     </header>
-</body>
     <main>
         <section class="hero">
             <div class="container">
@@ -245,5 +244,41 @@
                 </div>
             </div>
         </section>
+        <section class="connection">
+            <div class="container">
+                <div class="connection__content">
+                    <h2 class="connection__title">Связаться с нами</h2>
+                    <p class="connection__info">Вы можете связаться с нами  по любому вопросу</p>
+                    <form class="connection__form">
+                        <label for="name" class="connection__label">
+                            <input name="name" type="text" class="connection__input" placeholder="Ваше Имя">
+                        </label>
+                        <label for="tel" class="connection__label">
+                            <input name="tel" type="tel" class="connection__input" placeholder="Телефон">
+                        </label>
+                        <label for="email" class="connection__label">
+                            <input name="email" type="email" class="connection__input" placeholder="E-mail">
+                        </label>
+                        <button type="submit" class="connection__btn">Отправить</button>
+                        <span class="connection__span">
+                            Нажимая на кнопку “Отправить” вы соглашаетесь с 
+                            <span>политикой конфиденциальности</span>
+                        </span>
+                    </form>
+                </div>
+                <img src="img/leaves.png" alt="листья" class="connection__decoration">
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <img src="img/footer.png" alt="кружка" class="footer__img">
+            <div class="footer__contacts">
+                <a href="tel:+79770000000" class="tel footer__tel">+7 977 000-00-00</a>
+                <a href="mailto:support@mail.ru" class="mail footer__mail">support@mail.ru</a>
+            </div>
+            <button class="footer__btn">Войти</button>
+        </div>
+    </footer>
+</body>
 </html>
