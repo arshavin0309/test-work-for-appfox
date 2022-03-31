@@ -695,5 +695,14 @@ body {
         color: #FFAB00;
         border: none;
         border-radius: 100px;
+
+        &-auth {
+            svg {
+                display: none;
+            }
+        }
+        &-partners {
+            display: none;
+        }
     }
 }

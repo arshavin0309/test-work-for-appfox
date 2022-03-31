@@ -1,0 +1,196 @@
+@media (max-width: 765px) {
+    .container {
+        max-width: 765px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header {
+        &__contact {
+            margin-left: 10px;
+        }
+        &__ball {
+            width: 24px;
+            height: 24px;
+        }
+        &__btn {
+            &-auth {
+                svg {
+                    margin-right: 15px;
+                }
+            }
+            &-partners {
+                padding: 0;
+                background-color: transparent;
+                border: none;
+
+                svg {
+                    fill: #fff;
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+        &__tel {
+            margin-right: 24px;
+        }
+        &__point {
+            display: none;
+        }
+        &__item {
+            display: none;
+
+            &:nth-child(1) {
+                // временно
+                left: 250px;
+            }
+        }
+    }
+
+    .hero {
+        .container {
+            padding-top: 30px;
+            padding-right: 32px;
+        }
+        &__content {
+            padding-top: 0;
+            padding-left: 0;
+        }
+        &__img {
+            display: none;
+        }
+        &__box {
+            display: flex;
+        }
+        &__link {
+            &:not(:last-child) {
+                margin-right: 21px;
+            }
+        }
+    }
+
+    .rest {
+        .container {
+            position: relative;
+            padding-top: 300px;
+            grid-template-columns: 1fr;
+            background-position: center 100px;
+        }
+        &__title {
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-size: 13px;
+            line-height: 120%;
+            background-position: right 12px;
+
+            span {
+                display: block;
+            }
+        }
+        &__info {
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 150%;
+        }
+        &__number {
+            font-size: 13px;
+        }
+        &__discription {
+            font-size: 13px;
+        }
+        &__img {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+
+    .platform {
+        .container {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &__item {
+            display: none;
+        }
+        &__img {
+            top: 25px;
+        }
+    }
+
+    .delivery {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        &__content {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        &__title {
+            max-width: 105px;
+            padding-right: 20px;
+            font-size: 13px;
+            line-height: 120%;
+            background-size: 24px;
+        }
+        &__img {
+            position: absolute;
+            top: -100px;
+            right: 35px;
+        }
+    }
+
+    .questions {
+        &__content {
+            padding-top: 20px;
+        }
+        &__title {
+            max-width: 205px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 120%;
+            background-position: 85px 19px;
+        }
+    }
+
+    .connection {
+        &__title {
+            margin-bottom: 15px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-right: 25px;
+            font-size: 13px;
+            background-size: 18px
+        }
+        &__info {
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 150%;
+        }
+    }
+
+    .footer {
+        &__contacts {
+            margin-left: 0;
+        }
+        &__tel {
+            margin-right: 31px;
+        }
+        &__btn {
+            &-partners {
+                padding: 0;
+                background-color: transparent;
+
+                span {
+                    display: none;
+                }
+                svg {
+                    display: block;
+                }
+            }
+        }
+    }
+}
