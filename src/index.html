@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
+    <h1 class="visually-hidden">Good food</h1>
     <header class="header">
         <div class="container">
             <nav class="header__mobile">
@@ -197,10 +198,10 @@
                 </div>
                 <div class="platform__img">
                     <picture>
-                        <source media="(min-width: 1440px)" srcset="img/map.jpg">
-                        <source media="(min-width: 768px)" srcset="img/map-768.jpg">
-                        <source media="(max-width: 768px)" srcset="img/map-320.jpg">
-                        <img src="img/map.jpg" alt="карта">
+                        <source media="(min-width: 1440px)" srcset="img/map.png">
+                        <source media="(min-width: 768px)" srcset="img/map-768.png">
+                        <source media="(max-width: 768px)" srcset="img/map-320.png">
+                        <img src="img/map.png" alt="карта">
                     </picture>
                     <img src="img/map-1.png" alt="элемент на карте" class="platform__item">
                     <img src="img/map-2.png" alt="элемент на карте" class="platform__item">
@@ -317,13 +318,13 @@
                     <h2 class="connection__title">Связаться с нами</h2>
                     <p class="connection__info">Вы можете связаться с нами  по любому вопросу</p>
                     <form class="connection__form">
-                        <label for="name" class="connection__label">
+                        <label class="connection__label">
                             <input name="name" type="text" class="connection__input" placeholder="Ваше Имя" required>
                         </label>
-                        <label for="tel" class="connection__label">
+                        <label class="connection__label">
                             <input name="tel" type="tel" class="connection__input" placeholder="Телефон" required>
                         </label>
-                        <label for="email" class="connection__label">
+                        <label class="connection__label">
                             <input name="email" type="email" class="connection__input" placeholder="E-mail" required>
                         </label>
                         <button type="submit" class="connection__btn">Отправить</button>

@@ -41,7 +41,26 @@
 }
 
 button {
+    transition: .3s ease-in-out transform;
     cursor: pointer;
+
+    &:hover {
+        transform: scale(105%);
+    }
+    &:active {
+        transform: scale(95%);
+    }
+}
+
+a {
+    transition: .3s ease-in-out transform;
+
+    &:hover {
+        transform: scale(105%);
+    }
+    &:active {
+        transform: scale(95%);
+    }
 }
 
 body {
@@ -54,6 +73,17 @@ body {
     max-width: 1440px;
     padding-left: 165px;
     padding-right: 165px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;  
+    height: 1px;  
+    margin: -1px;  
+    border: 0;  
+    padding: 0;
+    clip: rect(0, 0, 0, 0);  
+    overflow: hidden;
 }
 
 .tel {
@@ -281,6 +311,16 @@ body {
         color: #768C9B;
     }
     &__link {
+        img {
+            transition: .3s ease-in-out transform;
+            
+            &:hover {
+                transform: scale(105%);
+            }
+            &:active {
+                transform: scale(95%);
+            }
+        }
         &:not(:last-child) {
             margin-right: 23px;
         }
@@ -301,7 +341,7 @@ body {
     }
     &__img {
         position: relative;
-        top: -103px;
+        top: -106px;
     }
     &__title {
         max-width: 460px;
@@ -340,6 +380,9 @@ body {
     &__discription {
         font-weight: 400;
         font-size: 18px;
+    }
+    &__balls {
+        position: absolute;
     }
     &__ball {
         position: absolute;
