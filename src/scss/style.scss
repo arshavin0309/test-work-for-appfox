@@ -112,31 +112,29 @@ body {
     &__tel {
         margin-right: 25px;
     }
+    &__list {
+        display: flex;
+    }
     &__btn {
-        padding: 14px 25px 14px 58px;
+        display: flex;
+        align-items: center;
+        padding: 14px 25px;
         font-weight: 700;
         font-size: 18px;
         color: #FFAB00;
         background-color: #FFFFFF;
         border: none;
         border-radius: 100px;
-        background-repeat: no-repeat;
-        background-position: 25px center;
 
+        svg {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: #FFAB00;
+        }
         &-auth {
             margin-right: 10px;
-            background-image: url('../img/auth.svg');
-
-            &-mobile {
-                display: none;
-            }
-        }
-        &-partners {
-            background-image: url('../img/partners.svg');
-            
-            &-mobile {
-                display: none;
-            }
         }
     }
     &__picture {
@@ -164,6 +162,7 @@ body {
         align-items: center;
     }
     &__point {
+        z-index: 2;
         position: absolute;
         bottom: -25px;
 
