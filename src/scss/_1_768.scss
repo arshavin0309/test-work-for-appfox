@@ -8,7 +8,7 @@
     .header {
         .container {
             min-height: 387px;
-            background-position: center -115px;
+            background-image: url('../img/header-768.png');
         }
         &__box {
             padding-top: 11px;
@@ -53,7 +53,9 @@
         }
         &__picture {
             top: 73px;
-            left: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
         }
         &__point {
             right: 290px;
@@ -192,8 +194,8 @@
     .rest {
         .container {
             grid-template-columns: 355px 1fr;
-            background-position: center 20px;
-            // background-size: 1085px 327px;
+            background-image: url('../img/rest-768.png');
+            background-position: center -11px;
         }
         &__ball {
             display: none;
@@ -260,8 +262,8 @@
     .delivery {
         .container {
             grid-template-columns: 160px 1fr;
-            background-position: center;
-            // background-size: cover;
+            background-image: url('../img/delivery-768.png');
+            background-size: cover;
             justify-items: center;
             align-items: center;
         }
@@ -282,6 +284,14 @@
         }
         &__item {
             display: none;
+
+            &:nth-child(1) {
+                display: block;
+                width: 32px;
+                height: 32px;
+                top: 10px;
+                left: 590px;
+            }
         }
     }
 
@@ -356,7 +366,9 @@
         }
         &__title {
             margin-bottom: 20px;
+            padding-right: 25px;
             font-size: 16px;
+            background-size: 20px;
         }
         &__info {
             margin-bottom: 15px;

@@ -15,6 +15,31 @@
 <body>
     <header class="header">
         <div class="container">
+            <nav class="header__mobile">
+                <svg class="header__ball">
+                    <use xlink:href="img/sprite.svg#header-ball"></use>
+                </svg>
+                <a href="tel:+79770000000" class="tel header__tel">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                </a>
+                <a href="mailto:support@mail.ru" class="mail header__mail">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
+                </a>
+                <button class="header__btn header__btn-auth">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#auth"></use>
+                    </svg>
+                </button>
+                <button class="header__btn header__btn-partners">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#partners"></use>
+                    </svg>
+                </button>
+            </nav>
             <div class="header__box">
                 <svg class="header__ball">
                     <use xlink:href="img/sprite.svg#header-ball"></use>
@@ -293,13 +318,13 @@
                     <p class="connection__info">Вы можете связаться с нами  по любому вопросу</p>
                     <form class="connection__form">
                         <label for="name" class="connection__label">
-                            <input name="name" type="text" class="connection__input" placeholder="Ваше Имя">
+                            <input name="name" type="text" class="connection__input" placeholder="Ваше Имя" required>
                         </label>
                         <label for="tel" class="connection__label">
-                            <input name="tel" type="tel" class="connection__input" placeholder="Телефон">
+                            <input name="tel" type="tel" class="connection__input" placeholder="Телефон" required>
                         </label>
                         <label for="email" class="connection__label">
-                            <input name="email" type="email" class="connection__input" placeholder="E-mail">
+                            <input name="email" type="email" class="connection__input" placeholder="E-mail" required>
                         </label>
                         <button type="submit" class="connection__btn">Отправить</button>
                         <span class="connection__span">
@@ -314,38 +339,66 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <picture>
-                <source media="(min-width: 1440px)" srcset="img/footer.png">
-                <source media="(min-width: 768px)" srcset="img/footer-ball-768.svg">
-                <source media="(max-width: 768px)" srcset="img/footer-ball-320.svg">
-                <img src="img/footer.png" alt="кружка" class="footer__img">
-            </picture>
-            <div class="footer__contacts">
+            <div class="footer__box">
+                <picture>
+                    <source media="(min-width: 1440px)" srcset="img/footer.png">
+                    <source media="(min-width: 768px)" srcset="img/footer-ball-768.svg">
+                    <source media="(max-width: 768px)" srcset="img/footer-ball-320.svg">
+                    <img src="img/footer.png" alt="кружка" class="footer__img">
+                </picture>
+                <div class="footer__contacts">
+                    <a href="tel:+79770000000" class="tel footer__tel">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                        <span>+7 977 000-00-00</span>
+                    </a>
+                    <a href="mailto:support@mail.ru" class="mail footer__mail">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#mail"></use>
+                        </svg>
+                        <span>support@mail.ru</span>
+                    </a>
+                </div>
+                <button class="footer__btn footer__btn-auth">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#auth"></use>
+                    </svg>
+                    <span>Войти</span>
+                </button>
+                <button class="footer__btn footer__btn-partners">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#partners"></use>
+                    </svg>
+                    <span>Стать партнером</span>
+                </button>
+            </div>
+
+            <nav class="footer__mobile">
+                <svg class="footer__ball">
+                    <use xlink:href="img/sprite.svg#header-ball"></use>
+                </svg>
                 <a href="tel:+79770000000" class="tel footer__tel">
                     <svg>
                         <use xlink:href="img/sprite.svg#phone"></use>
                     </svg>
-                    <span>+7 977 000-00-00</span>
                 </a>
                 <a href="mailto:support@mail.ru" class="mail footer__mail">
                     <svg>
                         <use xlink:href="img/sprite.svg#mail"></use>
                     </svg>
-                    <span>support@mail.ru</span>
                 </a>
-            </div>
-            <button class="footer__btn footer__btn-auth">
-                <svg>
-                    <use xlink:href="img/sprite.svg#auth"></use>
-                </svg>
-                <span>Войти</span>
-            </button>
-            <button class="footer__btn footer__btn-partners">
-                <svg>
-                    <use xlink:href="img/sprite.svg#partners"></use>
-                </svg>
-                <span>Стать партнером</span>
-            </button>
+                <button class="footer__btn footer__btn-auth">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#auth"></use>
+                    </svg>
+                </button>
+                <button class="footer__btn footer__btn-partners">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#partners"></use>
+                    </svg>
+                </button>
+            </nav>
         </div>
     </footer>
 </body>
